@@ -22,6 +22,8 @@ Route::get('/admin', function () {
     return view('admin');
 });
 
-Route::get('/tuperfil', function () {
-    return view('/perfil/tuperfil');
-});
+Route::get('/perfil', function () {
+    return view('usuario.perfil');
+})->name('perfil');
+
+

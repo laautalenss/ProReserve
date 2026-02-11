@@ -1,9 +1,9 @@
-<nav class="relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+<nav class="relative bg-white/90 backdrop-blur-sm after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-gray-200 shadow-sm">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
+        <div class="relative flex h-20 items-center justify-between">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
-                <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-2 focus:-outline-offset-1 focus:outline-blue-500">
                     <span class="absolute -inset-0.5"></span>
                     <span class="sr-only">Open main menu</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
@@ -14,10 +14,10 @@
                     </svg>
                 </button>
             </div>
-            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex flex-1 items-center justify-center sm:items-center sm:justify-start">
                 <div class="flex shrink-0 items-center">
                     <!-- <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" class="h-8 w-auto" /> -->
-                    <svg width="320" height="90" viewBox="0 0 320 90" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="240" height="60" viewBox="0 0 320 90" xmlns="http://www.w3.org/2000/svg" class="h-12 w-auto">
                         <defs>
                             <linearGradient id="sunGradient" x1="0" y1="0" x2="1" y2="1">
                                 <stop offset="0%" stop-color="#FF7A18" />
@@ -41,7 +41,7 @@
                             font-family="Montserrat, Arial, sans-serif"
                             font-size="32"
                             font-weight="600"
-                            fill="#1E2A38">
+                            fill="#1F2937">
                             Pro<tspan fill="#FF7A18">Reserve</tspan>
                         </text>
 
@@ -57,17 +57,17 @@
                     </svg>
 
                 </div>
-                <div class="hidden sm:ml-6 sm:block">
-                    <div class="flex space-x-4">
-                        <a href="/" class="rounded-md {{ request()->is('/') ? 'bg-gray-950/50 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white' }} px-3 py-2 text-sm font-medium">Inicio</a>
-                        <a href="/inicio" class="rounded-md {{ request()->is('inicio') ? 'bg-gray-950/50 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white' }} px-3 py-2 text-sm font-medium">Servicios</a>
-                        <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contacto</a>
-                        <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendario</a>
+                <div class="hidden sm:ml-10 sm:flex sm:items-center">
+                    <div class="flex items-center space-x-8">
+                        <a href="/" class="{{ request()->is('/') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100' }} px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 flex items-center">Inicio</a>
+                        <a href="/inicio" class="{{ request()->is('inicio') ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100' }} px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 flex items-center">Servicios</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 hover:bg-gray-100 px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 flex items-center">Contacto</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 hover:bg-gray-100 px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 flex items-center">Calendario</a>
                     </div>
                 </div>
             </div>
             <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button type="button" class="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
+                <button type="button" class="relative rounded-full p-1 text-gray-600 hover:text-gray-900 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500">
                     <span class="absolute -inset-1.5"></span>
                     <span class="sr-only">View notifications</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
@@ -80,13 +80,13 @@
                     <button class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
                         <span class="absolute -inset-1.5"></span>
                         <span class="sr-only">Open user menu</span>
-                        <img src="https://ui-avatars.com/api/?name=Usuario&background=4f46e5&color=fff" alt="" class="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10" />
+                        <img src="https://ui-avatars.com/api/?name=Usuario&background=3b82f6&color=fff" alt="" class="size-8 rounded-full bg-white outline -outline-offset-1 outline-gray-200" />
                     </button>
 
-                    <el-menu anchor="bottom end" popover class="w-48 origin-top-right rounded-md bg-gray-800 py-1 outline -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
-                        <a href="{{ route('perfil') }}" class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:outline-hidden">Tu perfil</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:outline-hidden">Configuración</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:outline-hidden">Cerrar sesión</a>
+                    <el-menu anchor="bottom end" popover class="w-48 origin-top-right rounded-md bg-white py-1 outline -outline-offset-1 outline-gray-200 shadow-lg transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                        <a href="{{ route('perfil') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-hidden">Tu perfil</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-hidden">Configuración</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-hidden">Cerrar sesión</a>
                     </el-menu>
                 </el-dropdown>
             </div>
@@ -94,11 +94,11 @@
     </div>
 
     <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
-        <div class="space-y-1 px-2 pt-2 pb-3">
-            <a href="/" class="block rounded-md {{ request()->is('/') ? 'bg-gray-950/50 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white' }} px-3 py-2 text-base font-medium">Inicio</a>
-            <a href="/inicio" class="block rounded-md {{ request()->is('inicio') ? 'bg-gray-950/50 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white' }} px-3 py-2 text-base font-medium">Servicios</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contacto</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Calendario</a>
+        <div class="space-y-2 px-4 pt-4 pb-4 bg-gray-50">
+            <a href="/" class="block rounded-md {{ request()->is('/') ? 'bg-blue-50 text-blue-600' : 'text-gray-700 hover:bg-gray-100 hover:text-blue-600' }} px-4 py-3 text-base font-medium transition-all duration-200">Inicio</a>
+            <a href="/inicio" class="block rounded-md {{ request()->is('inicio') ? 'bg-blue-50 text-blue-600' : 'text-gray-700 hover:bg-gray-100 hover:text-blue-600' }} px-4 py-3 text-base font-medium transition-all duration-200">Servicios</a>
+            <a href="#" class="block rounded-md px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-all duration-200">Contacto</a>
+            <a href="#" class="block rounded-md px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-all duration-200">Calendario</a>
         </div>
     </el-disclosure>
 </nav>

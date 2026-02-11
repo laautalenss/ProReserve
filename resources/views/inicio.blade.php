@@ -17,7 +17,7 @@
             <!-- Tarjeta Restauracion -->
             <div class="bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
                 <a href="#">
-                    <img class="rounded-t-base" src="{{ asset('images/restauracion.jpg') }}" alt="Restauración" />
+                    <img class="rounded-t-base w-64 h-40 object-cover" src="{{ asset('images/restauracion.jpg') }}" alt="Restauración" />
                 </a>
                 <div class="p-6 text-center">
                     </span>
@@ -36,7 +36,7 @@
             <!-- Tarjeta Bienestar -->
             <div class="bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
                 <a href="#">
-                    <img class="rounded-t-base" src="{{ asset('images/bienestar.jpg') }}" alt="Bienestar" />
+                    <img class="rounded-t-base w-64 h-40 object-cover" src="{{ asset('images/bienestar.jpg') }}" alt="Bienestar" />
                 </a>
                 <div class="p-6 text-center">
                     </span>
@@ -55,7 +55,7 @@
             <!-- Tarjeta Ocio -->
             <div class="bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
                 <a href="#">
-                    <img class="rounded-t-base" src="{{ asset('images/ocio.webp') }}" alt="Ocio" />
+                    <img class="rounded-t-base w-64 h-40 object-cover" src="{{ asset('images/ocio.jpg') }}" alt="Ocio" />
                 </a>
                 <div class="p-6 text-center">
                     </span>
@@ -74,7 +74,7 @@
             <!-- Tarjeta Salud -->
             <div class="bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
                 <a href="#">
-                    <img class="rounded-t-base" src="{{ asset('images/salud.webp') }}" alt="Salud" />
+                    <img class="rounded-t-base w-64 h-40 object-cover" src="{{ asset('images/salud.jpg') }}" alt="Salud" />
                 </a>
                 <div class="p-6 text-center">
                     </span>

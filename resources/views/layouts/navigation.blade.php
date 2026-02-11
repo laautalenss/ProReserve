@@ -16,7 +16,46 @@
             </div>
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex shrink-0 items-center">
-                    <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" class="h-8 w-auto" />
+                    <!-- <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" class="h-8 w-auto" /> -->
+                    <svg width="320" height="90" viewBox="0 0 320 90" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="sunGradient" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#FF7A18" />
+                                <stop offset="100%" stop-color="#FFB347" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Icon -->
+                        <g transform="translate(10,10)">
+
+                            <!-- Sun -->
+                            <circle cx="35" cy="25" r="18" fill="url(#sunGradient)" opacity="0.9" />
+
+                            <!-- Volcano -->
+                            <path d="M15 60 L35 35 L55 60 Z" fill="#1E2A38" />
+
+                        </g>
+
+                        <!-- Brand Name -->
+                        <text x="90" y="50"
+                            font-family="Montserrat, Arial, sans-serif"
+                            font-size="32"
+                            font-weight="600"
+                            fill="#1E2A38">
+                            Pro<tspan fill="#FF7A18">Reserve</tspan>
+                        </text>
+
+                        <!-- Tagline -->
+                        <text x="92" y="70"
+                            font-family="Arial, sans-serif"
+                            font-size="12"
+                            fill="#6B7280"
+                            letter-spacing="1">
+                            Lanzarote Booking Platform
+                        </text>
+
+                    </svg>
+
                 </div>
                 <div class="hidden sm:ml-6 sm:block">
                     <div class="flex space-x-4">

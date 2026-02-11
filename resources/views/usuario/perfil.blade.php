@@ -28,7 +28,7 @@
                     </div>
 
                     <!-- Nombre y Bio -->
-                    <div class="mt-4 sm:mt-0 sm:ml-6 flex-1 text-center sm:text-left">
+                    <div class="mt-8 sm:mt-0 sm:ml-6 flex-1 text-center sm:text-left">
                         <h1 class="text-2xl font-bold text-gray-900">{{ auth()->check() ? auth()->user()->name : 'Tu Nombre' }}</h1>
                         <p class="text-gray-600">{{ auth()->check() ? auth()->user()->email : 'tu@email.com' }}</p>
                         <p class="mt-2 text-sm text-gray-500 max-w-2xl">
